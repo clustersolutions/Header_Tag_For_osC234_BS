@@ -1,3 +1,0 @@
-ALTER TABLE  `information` ADD  `information_seo_title` VARCHAR( 255 ) NULL DEFAULT NULL ,
-ADD  `information_seo_meta_description` TEXT NULL DEFAULT NULL ,
-ADD  `information_seo_meta_keywords` VARCHAR( 255 ) NULL DEFAULT NULL
