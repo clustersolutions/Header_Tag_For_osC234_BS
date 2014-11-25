@@ -1555,17 +1555,6 @@
     return $category['categories_seo_keywords'];
   }
   
-  function tep_get_products_mini_description($product_id, $language_id = 0) {
-    global $languages_id;
-
-    if ($language_id == 0) $language_id = $languages_id;
-    $product_query = tep_db_query("select products_mini_description from " . TABLE_PRODUCTS_DESCRIPTION . " where products_id = '" . (int)$product_id . "' and language_id = '" . (int)$language_id . "'");
-    $product = tep_db_fetch_array($product_query);
-
-    return $product['products_mini_description'];
-  }
-  
-  
   // admin - add reviews
 // www.clubosc.com
 

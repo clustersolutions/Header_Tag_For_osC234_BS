@@ -118,6 +118,4 @@ define('TEXT_EDIT_CATEGORIES_SEO_KEYWORDS', 'Edit the Category Meta Keywords for
 define('TEXT_PRODUCTS_SEO_DESCRIPTION', 'Product Meta Description for SEO:<br><small>Add a &lt;description&gt; Meta Element.</small>');
 define('TEXT_PRODUCTS_SEO_KEYWORDS', 'Product Meta Keywords for SEO:<br><small>Add a &lt;keyword&gt; Meta Element.<br>Must be comma separated.</small>');
 
-define('TEXT_PRODUCTS_MINI_DESCRIPTION', 'Product Mini Description:<br><small>Used in the "product list" in Category Pages.</small>');
-
 ?>
