@@ -5,7 +5,7 @@
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2012 osCommerce
+  Copyright (c) 2014 osCommerce
 
   Released under the GNU General Public License
 */
@@ -893,7 +893,7 @@
     $sort_suffix = '';
 
     if ($sortby) {
-      $sort_prefix = '<a href="' . tep_href_link(basename($PHP_SELF), tep_get_all_get_params(array('page', 'info', 'sort')) . 'page=1&sort=' . $colnum . ($sortby == $colnum . 'a' ? 'd' : 'a')) . '" title="' . tep_output_string(TEXT_SORT_PRODUCTS . ($sortby == $colnum . 'd' || substr($sortby, 0, 1) != $colnum ? TEXT_ASCENDINGLY : TEXT_DESCENDINGLY) . TEXT_BY . $heading) . '" class="productListing-heading">' ;
+	  $sort_prefix = '<a href="' . tep_href_link($PHP_SELF, tep_get_all_get_params(array('info', 'sort')) . 'sort=' . $colnum . ($sortby == $colnum . 'a' ? 'd' : 'a')) . '" title="' . tep_output_string(TEXT_SORT_PRODUCTS . ($sortby == $colnum . 'd' || substr($sortby, 0, 1) != $colnum ? TEXT_ASCENDINGLY : TEXT_DESCENDINGLY) . TEXT_BY . $heading) . '" class="productListing-heading">' ;
       $sort_suffix = (substr($sortby, 0, 1) == $colnum ? (substr($sortby, 1, 1) == 'a' ? '+' : '-') : '') . '</a>';
     }
 
@@ -1394,7 +1394,9 @@
     }
   }
 
-    function osc_split_mini_description($products_precis) {
+//Form Burton's seo header tag reloaded. Kept these as they look useful. Cluster Solutions. 11202014
+
+  function osc_split_mini_description($products_precis) {
     $content = strip_tags($products_precis);
 
     if (strlen($content) > 156 ) {
@@ -1411,3 +1413,5 @@
 
     return osc_split_mini_description($product['products_precis']);
   }
+
+?>

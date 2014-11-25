@@ -5,7 +5,7 @@
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2013 osCommerce
+  Copyright (c) 2014 osCommerce
 
   Released under the GNU General Public License
 */
@@ -81,6 +81,10 @@ define('BOX_CATALOG_PRODUCTS_EXPECTED', 'Products Expected');
 define('BOX_HEADING_CUSTOMERS', 'Customers');
 define('BOX_CUSTOMERS_CUSTOMERS', 'Customers');
 define('BOX_CUSTOMERS_ORDERS', 'Orders');
+
+// orders box text in includes/boxes/orders.php
+define('BOX_HEADING_ORDERS', 'Orders');
+define('BOX_ORDERS_ORDERS', 'Orders');
 
 // taxes box text in includes/boxes/taxes.php
 define('BOX_HEADING_LOCATION_AND_TAXES', 'Locations / Taxes');
@@ -297,3 +301,4 @@ define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Success: File upload saved successful
 define('WARNING_NO_FILE_UPLOADED', 'Warning: No file uploaded.');
 
 define('PLACEHOLDER_COMMA_SEPARATION', 'Must, Be, Comma, Separated');
+?>
